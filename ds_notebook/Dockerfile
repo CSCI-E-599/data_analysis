@@ -34,7 +34,7 @@ ENV SPARK_HOME /spark
 ARG POSTGRES_JDBC_VERSION=42.2.5
 RUN wget https://jdbc.postgresql.org/download/postgresql-${POSTGRES_JDBC_VERSION}.jar
 # Set spark-submit env vars
-ARG SPARK_DRIVER_MEMORY=12G
+ARG SPARK_DRIVER_MEMORY=2G
 ENV PYSPARK_SUBMIT_ARGS "--jars /postgresql-${POSTGRES_JDBC_VERSION}.jar --driver-memory=${SPARK_DRIVER_MEMORY} --conf spark.driver.maxResultSize=4g pyspark-shell"
 
 # Install requirements
