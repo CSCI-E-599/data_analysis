@@ -1,0 +1,2 @@
+# Ignore the data folder from the build.
+notebooks/data
