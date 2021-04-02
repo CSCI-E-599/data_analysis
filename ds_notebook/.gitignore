@@ -1,3 +1,6 @@
 .ipynb_checkpoints/
 spark-warehouse/
 sparkmonitor_kernelextension.log
+
+# Ignore large datasets
+notebooks/data/OpenFDAJson/
